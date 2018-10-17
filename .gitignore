@@ -1,0 +1,9 @@
+**/dist
+**/build
+**/node_modules
+**/.DS_Store
+**/.idea
+**/npm-debug.log
+**/.vscode
+**/.jsx___jb_tmp___
+**/.gitignore___jb_tmp___
