@@ -1,3 +1,3 @@
 
-require('babel-register');
-require('./json-server.js');
+const mockServerStart = require('./babelConverter');
+mockServerStart();
