@@ -2,7 +2,7 @@ import path from 'path';
 import jsonServer from 'json-server';
 import { readDirFiles } from './utils';
 
-function mockServerStart(thePath = path.resolve(__dirname, './api')) {
+function mockServerStart(thePath = path.resolve(__dirname, './api'), port = 8001) {
     console.log('thePath', thePath);
     const apis = readDirFiles(thePath);
     const routeMap = apis.reduce((a, b) => {
@@ -43,7 +43,7 @@ function mockServerStart(thePath = path.resolve(__dirname, './api')) {
             }
         }
     });
-    server.listen(3000, () => {
+    server.listen(port, () => {
         console.log('JSON Server is running');
     });
 }
