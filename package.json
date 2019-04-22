@@ -1,5 +1,5 @@
 {
-  "name": "mock",
+  "name": "json-server-mock",
   "version": "1.0.0",
   "description": "mock data",
   "scripts": {
