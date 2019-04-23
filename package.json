@@ -4,6 +4,7 @@
   "description": "mock data",
   "scripts": {
     "mock": "node mock-server/main.js",
+    "mock:supervisor": "npx supervisor -w ./mock mock-server/main.js",
     "mock:babel": "npx babel-node --presets @babel/preset-env mock-server/mockServerStart.js"
   },
   "author": "",
@@ -12,9 +13,12 @@
     "@babel/core": "^7.4.3",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.4.3",
-    "@babel/register": "^7.4.0",
-    "cross-env": "^5.2.0",
+    "chokidar": "^2.1.5",
     "json-server": "^0.14.0",
-    "mockjs": "^1.0.1-beta3"
+    "mockjs": "^1.0.1-beta3",
+    "supervisor": "^0.12.0"
+  },
+  "dependencies": {
+    "moment": "^2.24.0"
   }
 }
